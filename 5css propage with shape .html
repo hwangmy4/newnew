@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+   
+    
+    <link rel="stylesheet" href="abc.css">
+    <script
+    src="https://kit.fontawesome.com/3e3fb6f6f4.js"
+    crossorigin="anonymous"
+  ></script>
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>부트스트랩 차트그리기</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    
+
+
+  
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <img id="logo" src="로고.png" />
+        <div id="search_panel">
+          <i id="si" class="fas fa-search"></i>
+          <input
+            id="name"
+            type="text"
+            placeholder="교수님 성함을 입력해주세요."
+          />
+          <span id="Search_bt">Search</span>
+        </div>
+  
+        <div class="login_panel">
+          <div id="login_bt">로그인</div>
+          <div id="sign_in">회원가입</div>
+        </div>
+      </nav>
+      <main class='main'>
+        <section class='section1'>
+          <div class="container"> 
+            <canvas id="myChart" width="20" height="10" style="display: block; height: 278px; width: 417px;"> 
+            </canvas> </div> 
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"> </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+            <script> var ctx = document.getElementById('myChart'); var myChart = new Chart(ctx, { type: 'bar', data: { labels: ['의견 반영도', '강의 전달력', '자료퀄리티', '질의응답시간', '판서능력'], datasets: [{ 
+            data: [1, 2, 3, 4, 5], 
+            backgroundColor: [ 'rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)', 'rgba(153, 102, 255, 0.2)' ], borderColor: [ 'rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'], borderWidth: 1 }] }, 
+            options: { scales: { yAxes: [{ ticks: { beginAtZero: true } }] } } }); 
+            ctx.translate(100,100);
+            </script>
+
+
+        </section>
+        <section class='section'>
+            <div class='text10'> 이해근 교수님 </div>
+            <div class='text11'> 소속: 공과대학, 신소재공학부 </div>
+            <div class='text'> 이메일: haigunlee@korea.ac.kr</div>
+            <div class='text3'> 개인 홈페이지: http://faculty.korea.ac.kr/lsma </div>
+            <div class='img'></div>
+            <div class='text2'> 교수님 프로필</div>
+            <div class='text5'> 평가 </div>
+            <div class='text6'> 한줄평 </div>
+            <div class='text7'> 교수님이 매우 똑똑하세요. </div>
+            <div class='text8'> 교수님 친절하세요!</div>
+
+        </section>
+</body>
+</html>
